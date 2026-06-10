@@ -19,14 +19,12 @@
     --always-white: #FFF;
     --border-primary: #D1D5DB;
     --border-hover: #B9C2D0;
-
 }
 
 body {
-    font-size: 1.6rem; 
-    padding: 3.2rem;
+    font-size: 1.6rem;
+    padding-inline: 3.2rem;
     background: var(--background-primary);
-
 }
 
 header {
@@ -40,7 +38,6 @@ header {
         font-size: 2.4rem;
         margin-bottom: 4.4rem;
     }
-
 
     input, button {
         padding: 1.2rem 1.8rem;
@@ -72,7 +69,7 @@ header {
     }
 
     button:hover {
-        background: var(--color-brand);
+        background: var(--color-brand-hover);
         transition: background 0.4s;
     }
 }
@@ -127,9 +124,32 @@ header {
             cursor: pointer;
 
             img {
-                width: none;
+                width: 1.6rem;
                 opacity: 0.7;
             }
+        }
+    }
+}
+
+@media(min-width: 630px) {
+    main {
+        max-width: 62.7rem;
+        margin-inline: auto;
+    }
+
+    .adicionar-item div {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 1.6rem;
+
+        input {
+            grid-column: 1 / 8;
+            margin: 0;
+        }
+
+        button {
+            grid-column: 8 / 11;
+            cursor: pointer;
         }
     }
 }
