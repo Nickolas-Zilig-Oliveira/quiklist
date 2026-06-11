@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="e">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,11 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Quicklist</title>
+    <title>QuickList</title>
   </head>
   <body>
     <header>
-      <img src="./imagens/logo.png" alt="Logo do Quicklist" />
+      <img src="./imagens/logo.png" alt="Logo do Quick" />
     </header>
 
     <main>
@@ -23,27 +24,11 @@
 
         <div>
           <input type="text" placeholder="Adicionar um item" id="novo-item" />
-          <button>Adicionar item</button>
+          <button>Adicionar Item</button>
         </div>
       </section>
 
-      <section class="itens">
-        <div class="item">
-          <div>
-            <input type="checkbox" id="item-1" />
-
-            <div class="checkbox-customizada">
-              <img src="./imagens/checked.svg" alt="checked" />
-            </div>
-
-            <label for="item-1">Pão de forma</label>
-          </div>
-
-          <button>
-            <img src="./imagens/trash-icon.svg" alt="ícone do lixo" />
-          </button>
-        </div>
-      </section>
+      <section class="itens"></section>
     </main>
   </body>
 </html>
